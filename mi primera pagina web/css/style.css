@@ -1,0 +1,258 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*menu de navegacion*/
+   
+
+    header{
+        background:      #bbbbbb;
+        padding:            20px 0;
+    }
+
+    .caja{
+        width:              940px;
+        position:           relative; 
+        margin:             0 auto;
+    }   
+
+    nav{
+        position:           absolute;     
+        top:                110px;
+        right:              0;
+    }
+
+    nav li{
+        display:            inline;
+        margin:             0 0 0 15px;
+    }
+
+    nav a{
+        text-transform:     uppercase;
+        color:           #000000;
+        font-weight:        bold;
+        font-size:          22px;
+        text-decoration:    none;
+    }
+
+    nav a:hover{
+        color:              #c78c19;
+        text-decoration:       underline;
+    }
+
+
+/* Inicio de main*/
+
+    .titulo-principal{
+        text-align: center;
+    }
+
+    .banner{
+        width:          100%;
+    }
+
+    .principal{
+        background: #fefefe;
+        padding:       3em 0;
+        width:         940px;
+        margin:        0 auto;
+    }
+
+
+    .titulo-principal:first-letter{
+        font-weight:    bold;
+    }
+
+    p::first-line{
+        font-style:     italic;
+    }
+
+
+
+    .titulo-principal{
+
+        text-align:     center;
+        font-size:      2em;
+        margin:         0 0 1em;
+        clear:          left;
+
+    }
+
+
+    .item:before{
+        content: "♠";
+    }
+
+    .principal p{
+
+        margin:         0 0 1em;
+
+    }
+
+    .principal strong{
+
+        font-weight:    bold;
+
+    }
+
+    .principal em{
+
+        font-style:     italic;
+
+    }
+
+
+    #mision{
+
+        font-size:      20px;
+        
+    }
+
+
+    p{
+        text-align: center;
+    }
+
+    em strong{
+        color:        rgb(10, 125, 213);
+    }
+
+    .utensilios{
+        margin:         0 20px 20px 0;
+        width:          120px;
+        float:          left;
+    }
+
+    /*Mapa*/
+
+    .mapa{
+        padding:        3em 0;
+        background:   linear-gradient(rgba(235, 231, 231, 0.123),#1d1b1b);
+    }
+
+
+    .mapa p{
+        margin:         0 0 2em;
+        text-align:     center;
+    }
+
+    .mapa-contenido{
+        width:          940px;
+        margin:         0 auto;
+    }
+
+    /*Diferenciales*/
+
+    .diferenciales{
+        color:      #bbbbbb;
+        background: #1d1b1b;
+        padding:       3em 0;
+    }
+
+    .contenido-diferenciales{
+        width:          640px;
+        margin:         0 auto;
+    }
+
+    .items{
+        line-height:     1.5;
+        font-style:      italic;
+    }
+
+
+    .items.items:nth-child(2n){ 
+        font-weight: bold;
+    }
+
+    .lista-diferenciales{
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .items{
+        line-height: 1.5;
+    }
+    
+    .items:before{
+        content:"★"
+    }
+    
+    .items:first-child{
+        font-weight: bold;
+    }
+    
+    .imagen-diferenciales{
+        width:          60%;
+        float:          right;
+        margin:         0;
+        box-shadow:     10px 10px 10px #bbbbbb30 ;
+    }
+
+    .imagen-diferenciales:hover{
+        opacity:        0.3;
+        transition:     0.4s;
+    }
+    
+    .video{
+        width:          560px;
+        margin:         1em auto;
+    }
+
+    iframe{
+        margin:         2em;
+        padding:        2em;
+    }
+    
+
+    .imagen-diferenciales{
+        width:          60%;
+    }
+
+
+
+    /*video*/
+
+    .video{
+        width:          560px;
+        margin:         1em auto;
+    }
+
+
+    
+/*footer*/
+
+    footer{
+        text-align:        center;
+        padding:           40px;
+        background-image:  url(/img/servicios/bg.jpg)
+    }
+
+    .copyright{
+        color:          #ffffff;
+        font-size:         16px;
+        margin:            20px;
+    }
+
+/*media queries*/
+
+@media screen and (max-width:480px){
+    body{
+
+        h1{
+            text-align: center;
+        }
+
+        nav{
+            position:   static;
+        }
+
+        .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+            width:      auto;
+        }
+
+        .lista-diferenciales, .imagen-diferenciales{
+            width:      100%;
+        }
+    }
+}
